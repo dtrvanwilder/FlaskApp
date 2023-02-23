@@ -3,11 +3,6 @@ pipeline {
 
 
     stages {
-        stage ('Build') {
-            steps {
-                sh 'docker build -t jtgluck/flaskapp .'
-            }
-        }
         stage('Login and Push'){
             steps {
                 script {
